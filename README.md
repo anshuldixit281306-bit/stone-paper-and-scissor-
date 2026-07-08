@@ -1,4 +1,4 @@
-# time up counter 
+```# time up counter 
 
 import time
 
@@ -11,3 +11,4 @@ while seconds > 0:
     seconds -= 1    # Reduce the seconds by 1
 
 print("Time's up!")
+```
