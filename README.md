@@ -57,3 +57,45 @@ while True:
     else:
         print("Invalid Choice")
 ```
+
+# student data entry 
+
+```
+class Student:
+    def __init__(self, name, roll_no, student_class):
+        self.name = name
+        self.roll_no = roll_no
+        self.student_class = student_class
+
+    def display_info(self):
+        print("Student Information")
+        print("Name :", self.name)
+        print("Roll No :", self.roll_no)
+        print("Class :", self.student_class)
+
+
+# Child Class
+class Result(Student):
+    def __init__(self, name, roll_no, student_class, marks):
+        super().__init__(name, roll_no, student_class)
+        self.marks = marks
+
+    def display_result(self):
+        print("Marks :", self.marks)
+
+        if self.marks >= 33:
+            print("Result : PASS")
+        else:
+            print("Result : FAIL")
+
+name = input("Enter Student Name: ")
+roll_no = int(input("Enter Roll Number: "))
+student_class = input("Enter Class: ")
+marks = int(input("Enter Marks: "))
+
+student = Result(name, roll_no, student_class, marks)
+
+print()
+student.display_info()
+student.display_result()
+```
