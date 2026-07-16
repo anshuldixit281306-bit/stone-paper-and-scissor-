@@ -1,4 +1,4 @@
-# time up counter 
+# Time up counter 
 
 ```import time
 
@@ -58,7 +58,7 @@ while True:
         print("Invalid Choice")
 ```
 
-# student data entry 
+# Student Data Entry 
 
 ```
 class Student:
@@ -73,8 +73,6 @@ class Student:
         print("Roll No :", self.roll_no)
         print("Class :", self.student_class)
 
-
-# Child Class
 class Result(Student):
     def __init__(self, name, roll_no, student_class, marks):
         super().__init__(name, roll_no, student_class)
